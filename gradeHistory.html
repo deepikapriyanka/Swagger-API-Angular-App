@@ -1,0 +1,23 @@
+<h1>Welcome to Grade history</h1>
+<table border='1' cellpadding='3' cellspacing='0' class="table table-bordered table-striped"> <!---start of Table-->
+   
+    		<tr style="text-align:center">
+     			<td colspan="7"> Grade Information</td> 
+     		</tr>
+    		<tr>
+              <th>Assignment Name</th>
+              <th>Due Date</th>
+              <th>Max Score</th>
+              <th>Completion Date</th>
+              <th>Score Earned</th>    
+            <!--inserting json data in table-->
+            <tr  ng-repeat="x in gradeHistory"> 
+			
+            <td>{{ x.assignmentName }}</td>
+            <td>{{ x.dueDate }}</td>
+            <td>{{ x.maxScore }}</td>
+            <td>{{ x.completionDate }}</td>
+            <td>{{ x.scoreEarned }}</td>    
+			</tr>
+            
+  	</table> <!---End of Table-->

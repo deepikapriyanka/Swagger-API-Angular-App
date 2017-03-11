@@ -1,0 +1,24 @@
+
+
+<h1>Welcome to Enrollment History</h1>
+
+<div>
+		<table border='1' cellpadding='3' cellspacing='0' class="table table-bordered table-striped"> <!---start of Table-->
+   
+    		<tr style="text-align:center">
+     			<td colspan="7"> Enrollment Information</td> 
+     		</tr>
+    		<tr>
+              <th>Entry Date</th>
+              <th>Exit Date</th>
+              <th>exit Reason</th>
+            <!--inserting json data in table-->
+            <tr  ng-repeat="x in history"> <!---- here strict means search in the name only--->
+			
+            <td>{{ x.entryDate }}</td>
+            <td>{{ x.exitDate }}</td>
+            <td>{{ x.exitReason }}</td>			
+			</tr>
+            
+  	</table> <!---End of Table-->
+	  </div>
